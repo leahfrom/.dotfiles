@@ -1,5 +1,11 @@
 # leonfrom's .dotfiles
 
+<p align="center">
+  <img src="https://img.shields.io/github/forks/leonfrom/.dotfiles?color=green&style=for-the-badge" />
+  <img src="https://img.shields.io/github/stars/leonfrom/.dotfiles?color=yellow&style=for-the-badge" />
+  <img src="https://img.shields.io/github/watchers/leonfrom/.dotfiles?color=blue&style=for-the-badge" />
+</p>
+
 ## Installation
 
 ### Links for the dependencies:
