@@ -14,4 +14,4 @@
 </ul>
 
 ### Setup
-I manage my dotfiles with stow (https://www.gnu.org/software/stow/). Just clone this repo to <code>~/.dotfiles</code>, cd into this directory and run <code>stow -R *</code>
+I manage my dotfiles with stow (https://www.gnu.org/software/stow/). Just clone this repo to <code>~/.dotfiles</code>, cd into this directory and run <code>stow -R */</code>
