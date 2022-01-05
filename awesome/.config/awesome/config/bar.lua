@@ -3,6 +3,9 @@ local gears = require("gears")
 
 local wibox = require("wibox")
 
+local vicious = require("vicious")
+
+
 awful.screen.connect_for_each_screen(function(s)
     awful.tag({ "sys", "web", "chat", "work", "misc"}, s, awful.layout.layouts[1])
 
@@ -22,6 +25,18 @@ awful.screen.connect_for_each_screen(function(s)
 
     -- Textclock widget
     mytextclock = wibox.widget.textclock('%a %e %b, %H:%M')
+
+    -- CPU
+    mycpuwidget = wibox.widget.textbox()
+    vicious.register(mycpuwidget, vicious.widgets.cpu, "  $1%", 3)
+
+    -- Memory
+    mymemwidget = wibox.widget.textbox()
+    vicious.register(mymemwidget, vicious.widgets.mem, " $1%", 13)
+
+    -- Network
+    mynetwidget = wibox.widget.textbox()
+    vicious.register(mynetwidget, vicious.widgets.net, " ${enp42s0 down_kb}/${enp42s0 up_kb} kb", 3)
 
     -- Wibox
     s.mywibox = awful.wibar({ position = "top",
@@ -62,9 +77,14 @@ awful.screen.connect_for_each_screen(function(s)
 	        {
 		    layout = wibox.layout.fixed.horizontal,
 		    wibox.widget.textbox(" "),
-	            wibox.widget.systray(),
-		    wibox.widget.textbox(" | "),
-	            mytextclock,
+	            --wibox.widget.systray(),
+		    --wibox.widget.textbox(" | "),
+		    mycpuwidget,
+		    wibox.widget.textbox(" "),
+		    mymemwidget,
+		    wibox.widget.textbox(" "),
+		    mynetwidget,
+	            --mytextclock,
 	            --s.mylayoutbox,
 		    wibox.widget.textbox(" ")
 		},
