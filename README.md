@@ -6,6 +6,8 @@
   <img src="https://img.shields.io/github/watchers/leonfrom/.dotfiles?color=blue&style=for-the-badge" />
 </p>
 
+<img src="/screenshot.png" />
+
 ## Installation
 
 ### Links for the dependencies:
