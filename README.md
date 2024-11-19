@@ -1,9 +1,9 @@
-# leonfrom's .dotfiles
+# leahfrom's .dotfiles
 
 <p align="center">
-  <img src="https://img.shields.io/github/forks/leonfrom/.dotfiles?color=green&style=for-the-badge" />
-  <img src="https://img.shields.io/github/stars/leonfrom/.dotfiles?color=yellow&style=for-the-badge" />
-  <img src="https://img.shields.io/github/watchers/leonfrom/.dotfiles?color=blue&style=for-the-badge" />
+  <img src="https://img.shields.io/github/forks/leahfrom/.dotfiles?color=green&style=for-the-badge" />
+  <img src="https://img.shields.io/github/stars/leahfrom/.dotfiles?color=yellow&style=for-the-badge" />
+  <img src="https://img.shields.io/github/watchers/leahfrom/.dotfiles?color=blue&style=for-the-badge" />
 </p>
 
 <img src="/screenshot.png" />
